@@ -1,0 +1,15 @@
+.eis-navbar {
+  height: 60px;
+  line-height: 60px;
+  background-color: #1A936F;
+}
+
+.eis-app-title {
+  text-align:center;
+  font-size:20px;
+}
+
+.eis-link {
+  text-decoration: none;
+  color: #FFF;
+}
