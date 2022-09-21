@@ -10,46 +10,19 @@ const Sidebar = () => {
         <div id="dismiss"><i className="fa fa-times" aria-hidden="true"></i></div>
       </div>
 
-      <ul className="list-unstyled components">
-        <li>
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-          <ul className="collapse list-unstyled" id="homeSubmenu">
-            <li>
-              <a href="#">Home 1</a>
-            </li>
-            <li>
-              <a href="#">Home 2</a>
-            </li>
-            <li>
-              <a href="#">Home 3</a>
-            </li>
+      <ul className="list-unstyled components" id="accordionExample">
+        <li><Link className="text-decoration-none fw-bold">Rekapitulasi Produksi</Link></li>
+        <li><Link className="text-decoration-none fw-bold">Penyataan Hektar</Link></li>
+        <li className="accordion-item">
+          <Link className="text-decoration-none fw-bold" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Produksi TBS
+          </Link>
+          <ul className="list-unstyled accordion-collapse collapse" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+            <li><Link to="#" className="text-decoration-none">Dashboard Produksi</Link></li>
+            <li><Link to="#" className="text-decoration-none">Performa Kebun</Link></li>
           </ul>
         </li>
-
-        <li>
-          <Link to="#">About</Link>
-        </li>
-
-        <li>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-          <ul class="collapse list-unstyled" id="pageSubmenu">
-            <li>
-                <a href="#">Page 1</a>
-            </li>
-            <li>
-                <a href="#">Page 2</a>
-            </li>
-            <li>
-                <a href="#">Page 3</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
+        <li><Link className="text-decoration-none fw-bold">Water Management System</Link></li>
       </ul>
     </nav>
   );

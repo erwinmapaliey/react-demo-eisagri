@@ -14,11 +14,11 @@ const Navbar = () => {
         </div>
         <div className="col-9 eis-app-title">
           <Link to="#" className='eis-link'>
-            <img src="images/logo-hasnur.png" width="40px" className="me-3"/>
+            <img src="images/logo-hasnur.png" width="40px" className="me-3" alt="logo-hasnur" />
             <span>Agribusiness Executive Information System</span> 
           </Link>
         </div>
-        <div className="col-1 text-white">Erwin M</div>
+        <div className="col-1 text-end text-white">Erwin M</div>
         <div className="col-1 text-center">
           <button type="button" className="btn text-white">
             <i className="fas fa-sign-out"></i>
